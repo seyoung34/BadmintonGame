@@ -10,7 +10,7 @@ open class Character(Name: String, Atk: Int, Def: Int, Mastery: Int) {
 
 
 
-    fun printStatus() {
+    open fun printStatus() {
 
         print(
             "+--------------------------+\n" +

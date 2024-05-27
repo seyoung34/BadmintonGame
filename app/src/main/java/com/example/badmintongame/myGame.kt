@@ -14,15 +14,19 @@ class myGame {
     var selectCharacter_1 : Int =0
     var selectCharacter_2 : Int =0
     lateinit var characterList: Array<Character>
+    lateinit var Player_1: Player
+    lateinit var Player_2: Player
 
     fun makeCharacters(){
         var character_0 = Character("이세영", 100, 100, 100)
-        var character_1 = Character("박준호", 80, 40, 100)
-        var character_2 = Character("이승윤", 50, 20, 50)
-        var character_3 = Character("김지우",40,20, 50)
-        var character_4 = Character("김재진",60,30, 60)
+        var character_1 = Character("박준호", 80, 70, 100)
+        var character_2 = Character("이승윤", 50, 50, 50)
+        var character_3 = Character("김지우",40,30, 50)
+        var character_4 = Character("김재진",60,50, 60)
+        var character_5 = Character(" 지예원",90,90,90)
 
-        characterList= arrayOf(character_0,character_1,character_2,character_3,character_4)
+        characterList= arrayOf(character_0,character_1,character_2,
+            character_3,character_4,character_5)
     }
 
 
@@ -88,7 +92,11 @@ class myGame {
     }
 
     fun startGame(player1: Character, player2: Character) {
-        inGame(player1,player2).Play()
+        //inGame(player1,player2).Play()
+        val gameInstance = inGame(player1, player2)
+        Player_1 = gameInstance.Player_1
+        Player_2 = gameInstance.Player_2
+        gameInstance.Play()
     }
 
 }

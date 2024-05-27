@@ -1,37 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:orientation="vertical"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/white">
+    tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/scoreBoard"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BADMINTON\nGAME"
-        android:textSize="50dp"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:background="#5BD5F0"
-        />
+        android:text="Scoreboard"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#FFEB3B"
-        android:text="공격자"
-        android:textSize="50dp" />
+    <Button
+        android:id="@+id/player1StatsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 Stats"
+        android:layout_below="@id/scoreBoard"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#A7D2CB"
-        android:text="수비자"
-        android:textSize="50dp" />
+    <Button
+        android:id="@+id/player2StatsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2 Stats"
+        android:layout_below="@id/player1StatsButton"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    <Button
+        android:id="@+id/player1AttackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 Attack"
+        android:layout_below="@id/player2StatsButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/player2AttackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2 Attack"
+        android:layout_below="@id/player1AttackButton"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_below="@id/player2AttackButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

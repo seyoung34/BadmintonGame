@@ -97,60 +97,60 @@ open class inGame(player_1 :Character, player_2: Character) {
     }
 
 
-    class Player(Name: String, Atk: Int, Def: Int, Mastery: Int, private val game: inGame) : Character(Name, Atk, Def, Mastery){
-
-        var score : Int = 0
-
-        fun attack(){
-
-            val attacker: Player = this
-            val defender: Player = if (this == game.Player_1) game.Player_2 else game.Player_1
-
-            println("${attacker.name} 가/이 ${defender.name}한테 공격합니다")
-            if(checkMiss()){ //실수했을 때
-                println("공격 실수!")
-                defender.score++
-                println("->${game.Player_1.name}:${game.Player_1.score} VS ${game.Player_2.name}:${game.Player_2.score}\n")
-                game.turnOver()
-            }
-            else if (isAttackSuccessful(attacker,defender)) {
-                print("->공격 성공!")
-                println(" 1점 획득")
-                attacker.score++
-                println("->${game.Player_1.name}:${game.Player_1.score} VS ${game.Player_2.name}:${game.Player_2.score}\n")
-            } else {
-                println("->${attacker.name}의 공격 실패! ${defender.name}의 수비 성공!")
-
-            }
-        }
-
-
-        fun checkMiss() : Boolean{
-            //공격,수비,서브 때 호출하기
-            var missProbability: Int = 100 - this.mastery
-            val randomValue: Int = Random.nextInt(1, 101)
-            var returnValue : Boolean = false
-            if(randomValue < missProbability) //실수했을 때
-                returnValue = true
-            else
-                returnValue = false
-
-            return returnValue
-        }
-
-        fun isAttackSuccessful(attacker: Player, defender: Player): Boolean {
-
-            var attackProbability: Int = attacker.atk - defender.def //공격력 - 방어력 해서 공격확률
-            val randomValue: Int = Random.nextInt(1, 101)   //1~100 사이의 랜덤한 수
-
-            return randomValue < attackProbability  // attackprobability가 높을 수록 참일 확률이 높으니까 맞나?
-        }
-
-//    fun defense(defender: Character) {
-//        //println("${name}이 ${defender}한테 공격합니다")
+//    open class Player(Name: String, Atk: Int, Def: Int, Mastery: Int, private val game: inGame) : Character(Name, Atk, Def, Mastery){
+//
+//        var score : Int = 0
+//
+//        fun attack(){
+//
+//            val attacker: Player = this
+//            val defender: Player = if (this == game.Player_1) game.Player_2 else game.Player_1
+//
+//            println("${attacker.name} 가/이 ${defender.name}한테 공격합니다")
+//            if(checkMiss()){ //실수했을 때
+//                println("공격 실수!")
+//                defender.score++
+//                println("->${game.Player_1.name}:${game.Player_1.score} VS ${game.Player_2.name}:${game.Player_2.score}\n")
+//                game.turnOver()
+//            }
+//            else if (isAttackSuccessful(attacker,defender)) {
+//                print("->공격 성공!")
+//                println(" 1점 획득")
+//                attacker.score++
+//                println("->${game.Player_1.name}:${game.Player_1.score} VS ${game.Player_2.name}:${game.Player_2.score}\n")
+//            } else {
+//                println("->${attacker.name}의 공격 실패! ${defender.name}의 수비 성공!")
+//
+//            }
+//        }
+//
+//
+//        fun checkMiss() : Boolean{
+//            //공격,수비,서브 때 호출하기
+//            var missProbability: Int = 100 - this.mastery
+//            val randomValue: Int = Random.nextInt(1, 101)
+//            var returnValue : Boolean = false
+//            if(randomValue < missProbability) //실수했을 때
+//                returnValue = true
+//            else
+//                returnValue = false
+//
+//            return returnValue
+//        }
+//
+//        fun isAttackSuccessful(attacker: Player, defender: Player): Boolean {
+//
+//            var attackProbability: Int = attacker.atk - defender.def //공격력 - 방어력 해서 공격확률
+//            val randomValue: Int = Random.nextInt(1, 101)   //1~100 사이의 랜덤한 수
+//
+//            return randomValue < attackProbability  // attackprobability가 높을 수록 참일 확률이 높으니까 맞나?
+//        }
+//
+////    fun defense(defender: Character) {
+////        //println("${name}이 ${defender}한테 공격합니다")
+////    }
+//
 //    }
-
-    }
 
 
 }

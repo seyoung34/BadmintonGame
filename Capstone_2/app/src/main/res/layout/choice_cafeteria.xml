@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choice_cafeteria"
+    android:orientation="vertical"
+    android:background="#FFFDD0"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="#9BD5BD"
+        android:text="백록관 주문" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="#9BD5BD"
+        android:text="천지관 주문" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="#9BD5BD"
+        android:text="두리관 주문" />
+
+</LinearLayout>

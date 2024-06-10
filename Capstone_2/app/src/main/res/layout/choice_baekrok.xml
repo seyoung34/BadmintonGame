@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choice_baekrok"
+    android:background="#FFFDF0"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--        1.등심돈까스-->
+            <LinearLayout
+                android:id="@+id/deungsim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:outlineAmbientShadowColor="@color/black">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/deungsim" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="등심돈까스"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="4800원"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <!--        2.고치돈-->
+            <LinearLayout
+                android:id="@+id/gochidon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/gochidon"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="고치돈"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="5000원"
+                    android:textSize="23dp" />
+
+            </LinearLayout>
+
+            <!--        3.치킨까스-->
+            <LinearLayout
+                android:id="@+id/chicken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/chicken"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="치킨까스"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:textSize="23dp"
+                    android:gravity="center"
+                    android:text="4900원"/>
+
+            </LinearLayout>
+
+            <!--4.라면-->
+            <LinearLayout
+                android:id="@+id/lamen_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/lamen_1"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="라면"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:textSize="23dp"
+                    android:gravity="center"
+                    android:text="3000원"/>
+
+            </LinearLayout>
+
+            <!--        5.떡만두라면-->
+            <LinearLayout
+                android:id="@+id/lamen_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/lamen_2"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="떡만두라면"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:textSize="23dp"
+                    android:gravity="center"
+                    android:text="3500원"/>
+
+            </LinearLayout>
+
+            <!--        6.해장라면-->
+            <LinearLayout
+                android:id="@+id/lamen_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/lamen_3"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="해장라면"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:textSize="23dp"
+                    android:gravity="center"
+                    android:text="3300원"/>
+
+            </LinearLayout>
+
+            <!--        7.수육국밥-->
+            <LinearLayout
+                android:id="@+id/gookbap_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/gookbap_1"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="수육국밥"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:textSize="23dp"
+                    android:gravity="center"
+                    android:text="5800원"/>
+
+            </LinearLayout>
+
+            <!--        8.얼큰국밥-->
+            <LinearLayout
+                android:id="@+id/gookbap_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/gookbap_2"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="얼큰국밥"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:text="6300원"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/ok"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:background="#367588"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="40sp"-->
+<!--        android:text="ok"/>-->
+
+    <TextView
+        android:id="@+id/item_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#367588"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="장바구니"/>
+
+
+
+</LinearLayout>

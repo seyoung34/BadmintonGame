@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choice_doori"
+    android:background="#FFFDF0"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="740dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--        1.함박스테이크-->
+            <LinearLayout
+                android:id="@+id/hambak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:outlineAmbientShadowColor="@color/black">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/hambak" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="함박스테이크"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="6000원"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <!--        2.칼국수-->
+            <LinearLayout
+                android:id="@+id/kalgooksu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/kalgooksu"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="칼국수"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="4000원"
+                    android:textSize="23dp" />
+
+            </LinearLayout>
+
+            <!--        3.부대찌개-->
+            <LinearLayout
+                android:id="@+id/boodae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/boodae"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:text="부대찌개"/>
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:textSize="23dp"
+                    android:gravity="center"
+                    android:text="5500원"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/item_cart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#367588"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="장바구니"/>
+
+
+
+</LinearLayout>
